@@ -19,7 +19,7 @@ from tools_app import (
     del_sidebar,
 )
 
-df_sw = pd.read_parquet("datasets/site_web.parquet")
+df_sw = pd.read_parquet("streamlit/datasets/site_web.parquet")
 df_sw = clean_dup(df_sw)
 
 pdict = st.session_state["actor"]
