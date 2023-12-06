@@ -22,29 +22,14 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     layout="wide",
 )
-# st.markdown(
-#     """
-#     <style>
-#     img {
-#         cursor: pointer;
-#         transition: all .2s ease-in-out;
-#     }
-#     img:hover {
-#         transform: scale(1.1);
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True,
-# )
-
 
 del_sidebar()
 remove_full_screen()
 round_corners()
 
 # Importation des dataframes nécessaires.
-machine_learning = "datasets/machine_learning_final.parquet"
-site_web = "datasets/site_web.parquet"
+machine_learning = "streamlit/datasets/machine_learning_final.parquet"
+site_web = "streamlit/datasets/site_web.parquet"
 df_ml = pd.read_parquet(machine_learning)
 df_ml = clean_dup(df_ml)
 df_sw = pd.read_parquet(site_web)
