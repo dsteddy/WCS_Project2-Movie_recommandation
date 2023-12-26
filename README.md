@@ -21,7 +21,8 @@ To run the DigitalDreamers Recommandation System locally, you must have Python i
 
 3. Run the Streamlit app :
 
-   ```streamlit run DDMRS.py
+   ```python
+   streamlit run DDMRS.py
 
 # App
 You can find the app [here](https://movie-recommandations.streamlit.app/)
