@@ -18,7 +18,7 @@ async def fetch_infos(
     TMdb_id: int,
 ):
     params = {
-        "api_key": "fe4a6f12753fa6c12b0fc0253b5e667f",
+        "api_key": "API_KEY",
         "include_adult": "False",
         "language": "fr-FR",
         "append_to_response": "combined_credits",
